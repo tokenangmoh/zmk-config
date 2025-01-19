@@ -10,6 +10,34 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        hml: hml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+            hold-trigger-on-release;
+        };
+
+        hmr: hmr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+            hold-trigger-on-release;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -21,10 +49,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E            &kp R                 &kp T              &kp Y         &kp U               &kp I             &kp O    &kp P     &kp LC(BACKSPACE)
-&kp ESCAPE  &kp A  &kp S  &kp D            &kp F                 &kp G              &kp H         &kp J               &kp K             &kp L    &kp SEMI  &kp SQT
-&kp CAPS    &kt Z  &kp X  &kp C            &kp V                 &kp B              &kp N         &kp M               &kp COMMA         &kp DOT  &kp FSLH  &caps_word
-                          &mt LCTRL MINUS  &mt LEFT_SHIFT SPACE  &lt 1 BACKSPACE    &lt 2 DELETE  &mt LEFT_ALT ENTER  &mt LEFT_GUI SQT
+&kp TAB     &kp Q            &kp W            &kp E                &kp R                 &kp T              &kp Y         &kp U               &kp I                &kp O            &kp P                    &kp LC(BACKSPACE)
+&kp ESCAPE  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F     &kp G              &kp H         &hmr LEFT_SHIFT J   &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &kp SQT
+&kp CAPS    &kt Z            &kp X            &kp C                &kp V                 &kp B              &kp N         &kp M               &kp COMMA            &kp DOT          &kp FSLH                 &caps_word
+                                              &mt LCTRL MINUS      &mt LEFT_SHIFT SPACE  &lt 1 BACKSPACE    &lt 2 DELETE  &mt LEFT_ALT ENTER  &mt LEFT_GUI SQT
             >;
         };
 
