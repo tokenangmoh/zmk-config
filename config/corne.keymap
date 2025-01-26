@@ -63,10 +63,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1        &kp N2      &kp N3         &kp N4        &kp N5           &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &trans
-&trans  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &trans
-&trans  &kp GRAVE     &kp EQUAL   &kp LBKT       &kp RBKT      &kp BSLH         &kp LS(TILDE)  &kp LS(PLUS)  &kp LS(LBRC)  &kp LS(RBRC)  &kp LS(PIPE)  &trans
-                                  &trans         &trans        &trans           &kp DELETE     &trans        &trans
+&trans  &kp N1     &kp N2     &kp N3    &kp N4      &kp N5         &kp N6      &kp N7    &kp N8          &kp N9                &kp N0                 &trans
+&trans  &kp EXCL   &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET   &kp AMPS  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&tog 3  &kp GRAVE  &kp EQUAL  &kp LBKT  &kp RBKT    &kp BSLH       &kp TILDE   &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &tog 0
+                              &trans    &trans      &trans         &kp DELETE  &trans    &trans
             >;
         };
 
@@ -77,6 +77,33 @@
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
+            bindings = <
+&trans      &kp TAB       &kp HOME      &kp UP        &kp END       &kp PAGE_UP      &kp PRINTSCREEN  &kp F1  &kp F2   &kp F3   &kp F4   &kp K_POWER
+&trans      &kp ESCAPE    &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAGE_DOWN    &kp INSERT       &kp F5  &kp F6   &kp F7   &kp F8   &kp C_SLEEP
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &bt BT_CLR_ALL   &kp F9  &kp F10  &kp F11  &kp F12  &trans
+                                        &trans        &trans        &kp BACKSPACE    &trans           &trans  &trans
+            >;
+        };
+
+        MACRTY {
+            bindings = <
+&kp TAB     &kp Q                &kp W            &kp E               &kp R                 &kp T              &kp Y         &kp U               &kp I                 &kp O            &kp P                        &kp LA(BACKSPACE)
+&kp ESCAPE  &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_GUI D     &hml LEFT_SHIFT F     &kp G              &kp H         &hmr LEFT_SHIFT J   &hmr LEFT_GUI K       &hmr LEFT_ALT L  &hmr LEFT_CONTROL SEMICOLON  &kp SQT
+&kp CAPS    &kp Z                &kp X            &kp B               &kp V                 &kp A              &kp N         &kp M               &kp COMMA             &kp DOT          &kp FSLH                     &caps_word
+                                                  &mt LEFT_GUI MINUS  &mt LEFT_SHIFT SPACE  &lt 4 BACKSPACE    &lt 5 DELETE  &mt LEFT_ALT ENTER  &mt LEFT_CONTROL SQT
+            >;
+        };
+
+        MACSYM {
+            bindings = <
+&trans  &kp N1     &kp N2     &kp N3    &kp N4      &kp N5         &kp N6      &kp N7    &kp N8          &kp N9                &kp N0                 &trans
+&trans  &kp EXCL   &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET   &kp AMPS  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&tog 3  &kp GRAVE  &kp EQUAL  &kp LBKT  &kp RBKT    &kp BSLH       &kp TILDE   &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &tog 0
+                              &trans    &trans      &trans         &kp DELETE  &trans    &trans
+            >;
+        };
+
+        MACFUN {
             bindings = <
 &trans      &kp TAB       &kp HOME      &kp UP        &kp END       &kp PAGE_UP      &kp PRINTSCREEN  &kp F1  &kp F2   &kp F3   &kp F4   &kp K_POWER
 &trans      &kp ESCAPE    &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAGE_DOWN    &kp INSERT       &kp F5  &kp F6   &kp F7   &kp F8   &kp C_SLEEP
