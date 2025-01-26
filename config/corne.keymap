@@ -65,7 +65,7 @@
             bindings = <
 &trans  &kp N1     &kp N2     &kp N3    &kp N4      &kp N5         &kp N6      &kp N7    &kp N8          &kp N9                &kp N0                 &trans
 &trans  &kp EXCL   &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET   &kp AMPS  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&tog 3  &kp GRAVE  &kp EQUAL  &kp LBKT  &kp RBKT    &kp BSLH       &kp TILDE   &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &tog 0
+&tog 3  &kp GRAVE  &kp EQUAL  &kp LBKT  &kp RBKT    &kp BSLH       &kp TILDE   &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &trans
                               &trans    &trans      &trans         &kp DELETE  &trans    &trans
             >;
         };
@@ -98,7 +98,7 @@
             bindings = <
 &trans  &kp N1     &kp N2     &kp N3    &kp N4      &kp N5         &kp N6      &kp N7    &kp N8          &kp N9                &kp N0                 &trans
 &trans  &kp EXCL   &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET   &kp AMPS  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&tog 3  &kp GRAVE  &kp EQUAL  &kp LBKT  &kp RBKT    &kp BSLH       &kp TILDE   &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &tog 0
+&tog 3  &kp GRAVE  &kp EQUAL  &kp LBKT  &kp RBKT    &kp BSLH       &kp TILDE   &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &trans
                               &trans    &trans      &trans         &kp DELETE  &trans    &trans
             >;
         };
