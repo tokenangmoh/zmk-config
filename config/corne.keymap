@@ -8,8 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -83,7 +81,7 @@
             bindings = <
 &trans  &kp N1     &kp N2     &kp N3    &kp N4      &kp N5         &kp N6      &kp N7    &kp N8          &kp N9                &kp N0                 &trans
 &trans  &kp EXCL   &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET   &kp AMPS  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&tog 3  &kp GRAVE  &kp EQUAL  &kp LBKT  &kp RBKT    &kp BSLH       &kp TILDE   &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &trans
+&trans  &kp GRAVE  &kp EQUAL  &kp LBKT  &kp RBKT    &kp BSLH       &kp TILDE   &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &trans
                               &trans    &trans      &trans         &kp DELETE  &trans    &trans
             >;
         };
@@ -116,7 +114,7 @@
             bindings = <
 &trans  &kp N1     &kp N2     &kp N3    &kp N4      &kp N5         &kp N6      &kp N7    &kp N8          &kp N9                &kp N0                 &trans
 &trans  &kp EXCL   &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET   &kp AMPS  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&tog 3  &kp GRAVE  &kp EQUAL  &kp LBKT  &kp RBKT    &kp BSLH       &kp TILDE   &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &trans
+&trans  &kp GRAVE  &kp EQUAL  &kp LBKT  &kp RBKT    &kp BSLH       &kp TILDE   &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &trans
                               &trans    &trans      &trans         &kp DELETE  &trans    &trans
             >;
         };
@@ -133,7 +131,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_UP    &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &tog 3  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans          &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &trans  &trans
                         &trans  &trans  &trans    &mkp MB1        &mkp MB1        &mkp MB2
             >;
