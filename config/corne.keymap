@@ -65,8 +65,8 @@
 
             bindings = <
 &kp TAB     &kp Q    &kp W            &kp E                &kp R                  &kp T              &kp Y         &kp U               &kp I                &kp O            &kp P                    &tog 3
-&kp ESCAPE  &lt 6 A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F      &kp G              &kp H         &hmr LEFT_SHIFT J   &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &tog 6
-&kp CAPS    &kp Z    &kp X            &kp C                &kp V                  &kp B              &kp N         &kp M               &kp COMMA            &kp DOT          &kp FSLH                 &tog 7
+&kp ESCAPE  &lt 6 A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F      &kp G              &kp H         &hmr LEFT_SHIFT J   &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &tog 7
+&kp CAPS    &kp Z    &kp X            &kp C                &kp V                  &kp B              &kp N         &kp M               &kp COMMA            &kp DOT          &kp FSLH                 &tog 8
                                       &mt LCTRL MINUS      &spc LEFT_SHIFT SPACE  &lt 1 BACKSPACE    &lt 2 DELETE  &mt LEFT_ALT ENTER  &mt LEFT_GUI SQT
             >;
         };
