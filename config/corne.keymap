@@ -64,9 +64,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q    &kp W            &kp E                &kp R                  &kp T              &kp Y         &kp U               &kp I                &kp O            &kp P                    &kp LC(BACKSPACE)
-&kp ESCAPE  &lt 6 A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F      &kp G              &kp H         &hmr LEFT_SHIFT J   &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &kp SQT
-&kp CAPS    &kp Z    &kp X            &kp C                &kp V                  &kp B              &kp N         &kp M               &kp COMMA            &kp DOT          &kp FSLH                 &caps_word
+&kp TAB     &kp Q    &kp W            &kp E                &kp R                  &kp T              &kp Y         &kp U               &kp I                &kp O            &kp P                    &tog 3
+&kp ESCAPE  &lt 6 A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F      &kp G              &kp H         &hmr LEFT_SHIFT J   &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &tog 6
+&kp CAPS    &kp Z    &kp X            &kp C                &kp V                  &kp B              &kp N         &kp M               &kp COMMA            &kp DOT          &kp FSLH                 &tog 7
                                       &mt LCTRL MINUS      &spc LEFT_SHIFT SPACE  &lt 1 BACKSPACE    &lt 2 DELETE  &mt LEFT_ALT ENTER  &mt LEFT_GUI SQT
             >;
         };
@@ -79,10 +79,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1     &kp N2     &kp N3    &kp N4      &kp N5         &kp N6      &kp N7    &kp N8          &kp N9                &kp N0                 &trans
-&trans  &kp EXCL   &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET   &kp AMPS  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp GRAVE  &kp EQUAL  &kp LBKT  &kp RBKT    &kp BSLH       &kp TILDE   &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &trans
-                              &trans    &trans      &trans         &kp DELETE  &trans    &trans
+&kp TAB     &kp N1     &kp N2     &kp N3    &kp N4      &kp N5         &kp N6      &kp N7    &kp N8          &kp N9                &kp N0                 &trans
+&kp ESCAPE  &kp EXCL   &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET   &kp AMPS  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&kp CAPS    &kp GRAVE  &kp EQUAL  &kp LBKT  &kp RBKT    &kp BSLH       &kp TILDE   &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &trans
+                                  &trans    &trans      &trans         &kp DELETE  &trans    &trans
             >;
         };
 
@@ -94,8 +94,8 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans      &kp TAB       &kp HOME      &kp UP        &kp END       &kp PAGE_UP      &kp PRINTSCREEN  &kp F1  &kp F2   &kp F3   &kp F4   &kp K_POWER
-&trans      &kp ESCAPE    &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAGE_DOWN    &kp INSERT       &kp F5  &kp F6   &kp F7   &kp F8   &kp C_SLEEP
+&kp TAB     &kp TAB       &kp HOME      &kp UP        &kp END       &kp PAGE_UP      &kp PRINTSCREEN  &kp F1  &kp F2   &kp F3   &kp F4   &trans
+&kp ESCAPE  &kp ESCAPE    &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAGE_DOWN    &kp INSERT       &kp F5  &kp F6   &kp F7   &kp F8   &trans
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &bt BT_CLR_ALL   &kp F9  &kp F10  &kp F11  &kp F12  &trans
                                         &trans        &trans        &kp BACKSPACE    &trans           &trans  &trans
             >;
@@ -103,26 +103,26 @@
 
         MACRTY {
             bindings = <
-&kp TAB     &kp Q    &kp W            &kp E               &kp R                 &kp T              &kp Y         &kp U               &kp I                 &kp O            &kp P                        &kp LA(BACKSPACE)
-&kp ESCAPE  &lt 6 A  &hml LEFT_ALT S  &hml LEFT_GUI D     &hml LEFT_SHIFT F     &kp G              &kp H         &hmr LEFT_SHIFT J   &hmr LEFT_GUI K       &hmr LEFT_ALT L  &hmr LEFT_CONTROL SEMICOLON  &kp SQT
-&kp CAPS    &kp Z    &kp X            &kp C               &kp V                 &kp B              &kp N         &kp M               &kp COMMA             &kp DOT          &kp FSLH                     &caps_word
+&kp TAB     &kp Q    &kp W            &kp E               &kp R                 &kp T              &kp Y         &kp U               &kp I                 &kp O            &kp P                        &trans
+&kp ESCAPE  &lt 6 A  &hml LEFT_ALT S  &hml LEFT_GUI D     &hml LEFT_SHIFT F     &kp G              &kp H         &hmr LEFT_SHIFT J   &hmr LEFT_GUI K       &hmr LEFT_ALT L  &hmr LEFT_CONTROL SEMICOLON  &trans
+&kp CAPS    &kp Z    &kp X            &kp C               &kp V                 &kp B              &kp N         &kp M               &kp COMMA             &kp DOT          &kp FSLH                     &trans
                                       &mt LEFT_GUI MINUS  &mt LEFT_SHIFT SPACE  &lt 4 BACKSPACE    &lt 5 DELETE  &mt LEFT_ALT ENTER  &mt LEFT_CONTROL SQT
             >;
         };
 
         MACSYM {
             bindings = <
-&trans  &kp N1     &kp N2     &kp N3    &kp N4      &kp N5         &kp N6      &kp N7    &kp N8          &kp N9                &kp N0                 &trans
-&trans  &kp EXCL   &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET   &kp AMPS  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp GRAVE  &kp EQUAL  &kp LBKT  &kp RBKT    &kp BSLH       &kp TILDE   &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &trans
-                              &trans    &trans      &trans         &kp DELETE  &trans    &trans
+&kp TAB     &kp N1     &kp N2     &kp N3    &kp N4      &kp N5         &kp N6      &kp N7    &kp N8          &kp N9                &kp N0                 &trans
+&kp ESCAPE  &kp EXCL   &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET   &kp AMPS  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&kp CAPS    &kp GRAVE  &kp EQUAL  &kp LBKT  &kp RBKT    &kp BSLH       &kp TILDE   &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &trans
+                                  &trans    &trans      &trans         &kp DELETE  &trans    &trans
             >;
         };
 
         MACFUN {
             bindings = <
-&trans      &kp TAB       &kp HOME      &kp UP        &kp END       &kp PAGE_UP      &kp PRINTSCREEN  &kp F1  &kp F2   &kp F3   &kp F4   &kp K_POWER
-&trans      &kp ESCAPE    &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAGE_DOWN    &kp INSERT       &kp F5  &kp F6   &kp F7   &kp F8   &kp C_SLEEP
+&kp TAB     &kp TAB       &kp HOME      &kp UP        &kp END       &kp PAGE_UP      &kp PRINTSCREEN  &kp F1  &kp F2   &kp F3   &kp F4   &trans
+&kp ESCAPE  &kp ESCAPE    &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAGE_DOWN    &kp INSERT       &kp F5  &kp F6   &kp F7   &kp F8   &trans
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &bt BT_CLR_ALL   &kp F9  &kp F10  &kp F11  &kp F12  &trans
                                         &trans        &trans        &kp BACKSPACE    &trans           &trans  &trans
             >;
@@ -131,9 +131,27 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_UP    &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &tog 3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans          &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &trans  &trans
                         &trans  &trans  &trans    &mkp MB1        &mkp MB1        &mkp MB2
+            >;
+        };
+
+        PCLEAN {
+            bindings = <
+&kp TAB     &kp Q  &kp W  &kp E            &kp R                  &kp T              &kp Y         &kp U               &kp I             &kp O    &kp P     &trans
+&kp ESCAPE  &kp A  &kp S  &kp D            &kp F                  &kp G              &kp H         &kp J               &kp K             &kp L    &kp SEMI  &trans
+&kp CAPS    &kp Z  &kp X  &kp C            &kp V                  &kp B              &kp N         &kp M               &kp DOT           &kp DOT  &kp FSLH  &trans
+                          &mt LCTRL MINUS  &spc LEFT_SHIFT SPACE  &lt 1 BACKSPACE    &lt 2 DELETE  &mt LEFT_ALT ENTER  &mt LEFT_GUI SQT
+            >;
+        };
+
+        MACLEAN {
+            bindings = <
+&kp TAB     &kp Q  &kp W  &kp E               &kp R                  &kp T              &kp Y         &kp U               &kp I                 &kp O    &kp P     &trans
+&kp ESCAPE  &kp A  &kp S  &kp D               &kp F                  &kp G              &kp H         &kp J               &kp K                 &kp L    &kp SEMI  &trans
+&kp CAPS    &kp Z  &kp X  &kp C               &kp V                  &kp B              &kp N         &kp M               &kp DOT               &kp DOT  &kp FSLH  &trans
+                          &mt LEFT_GUI MINUS  &spc LEFT_SHIFT SPACE  &lt 1 BACKSPACE    &lt 2 DELETE  &mt LEFT_ALT ENTER  &mt LEFT_CONTROL SQT
             >;
         };
     };
